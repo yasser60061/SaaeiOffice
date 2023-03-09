@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="3sp"
+    android:layout_marginEnd="3sp"
+    android:orientation="horizontal"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="15sp">
+
+    <CheckBox
+        android:id="@+id/area_name_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:paddingStart="15sp"
+        android:paddingEnd="15sp"
+        android:textSize="12sp"
+        android:textColor="@color/dark_blue"
+        android:background="@drawable/rectangle_shape"
+        android:text="---" />
+
+</LinearLayout>

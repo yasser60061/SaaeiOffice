@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".ui.fragments.requestEstateFragments.RequestEstatePage2Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/display_main_feature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:drawableEnd="@drawable/ic_downward"
+                android:gravity="center"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/main_specifications"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hide_main_feature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:drawableEnd="@drawable/ic_upward"
+                android:gravity="center"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/main_specifications"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_features_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15sp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/main_features_list_in_request_estate_item"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:id="@+id/display_sub_feature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:drawableEnd="@drawable/ic_downward"
+                android:gravity="center"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/sub_specifications"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hide_sub_feature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:drawableEnd="@drawable/ic_upward"
+                android:gravity="center"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/sub_specifications"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sub_features_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15sp"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/sub_features_list_in_request_estate_item"
+            tools:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="4sp"
+            android:text="مواصفات أخرى"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/other_specification_tv"
+            android:layout_width="match_parent"
+            android:layout_height="135sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:maxLines="5"
+            android:paddingStart="10sp"
+            android:paddingTop="10sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="10sp"
+            android:textAlignment="center"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="7sp"
+            android:text="الميزانية"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/min_budget_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:hint="@string/less_budget"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/max_budget_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginStart="7sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:hint="@string/highest_budget"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/allow_communication_via_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:text="@string/allow_communication_via_phone"
+                android:textAlignment="viewStart"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/do_you_need_installment_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:text="@string/do_you_need_installment"
+                android:textAlignment="viewStart"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previous_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:layoutDirection="ltr"
+                android:text="السابق"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:text="التالي"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

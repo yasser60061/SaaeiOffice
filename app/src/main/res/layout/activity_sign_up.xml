@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.activities.SignupActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/skip_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/skip_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_image" />
+
+            <TextView
+                android:id="@+id/skip_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/skip"
+                android:textColor="@color/green_for_app"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_margin="20sp"
+                android:adjustViewBounds="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:src="@drawable/splash_logo" />
+
+            <RelativeLayout
+                android:layout_width="129sp"
+                android:layout_height="129sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:background="@drawable/rounded_button_elementary1">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/office_logo_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/office_logo"
+                    app:riv_corner_radius="15sp" />
+
+                <TextView
+                    android:id="@+id/image_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10sp"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    android:text="@string/office_logo"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="@string/office_name"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/office_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="text"
+                android:maxLength="40"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:paddingHorizontal="2sp">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/country_code_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5sp"
+                    android:layout_weight="1"
+                    app:ccp_clickable="false"
+                    app:ccp_defaultNameCode="SA" />
+
+                <EditText
+                    android:id="@+id/phone_number_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5sp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="5X XXX XXXX"
+                    android:inputType="phone"
+                    android:maxLength="9"
+                    android:paddingStart="5sp"
+                    android:paddingEnd="5sp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="كلمة المرور"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="textPassword"
+                android:paddingHorizontal="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="@string/e_mail"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/email_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="تصنيف المكتب"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text">
+
+                <RadioGroup
+                    android:id="@+id/office_type_rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/company_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_marginStart="5sp"
+                        android:paddingEnd="30sp"
+                        android:text="شركة"
+                        android:textSize="11sp" />
+
+                    <RadioButton
+                        android:id="@+id/office_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingEnd="30sp"
+                        android:text="مكتب عقاري"
+                        android:textSize="11sp" />
+
+                    <RadioButton
+                        android:id="@+id/free_work_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="30sp"
+                        android:text="عمل حر"
+                        android:textSize="11sp" />
+
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/commercial_file_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="@string/commercial_register"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/commercial_register_rl"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text">
+
+                <TextView
+                    android:id="@+id/commercial_register_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/file_icon"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="15sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/commercial_number_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="رقم السجل التجاري"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/id_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="text"
+                android:maxLength="12"
+                android:paddingStart="15sp"
+                android:paddingEnd="12sp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="رقم المعلن"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ad_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/condition_and_terms_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/condition_and_terms_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3sp"
+                    android:layout_marginEnd="3sp"
+                    android:textColor="@color/green_for_app"
+                    android:text="@string/read_condition_and_terms"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15sp"
+                android:background="@drawable/rounded_button"
+                android:paddingStart="50sp"
+                android:paddingEnd="50sp"
+                android:text="إنشاء حساب"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/login_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40sp"
+                android:padding="15sp"
+                android:text="@string/login_text"
+                android:textColor="@color/green_for_app"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.activities.MediaInChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/pink_for_app"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/back_rl"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/skip_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_image"
+                android:contentDescription="@string/app_name" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="عرض الوسائط"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image_item_in_chat_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            app:riv_corner_radius="5sp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:scaleType="fitXY" />
+
+        <WebView
+            android:id="@+id/url_in_chat_wb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

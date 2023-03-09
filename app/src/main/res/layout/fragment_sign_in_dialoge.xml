@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/splash_logo"
+        app:riv_corner_radius="15sp" />
+
+    <TextView
+        android:id="@+id/login_and_office_status_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" يجب عليك تسجيل الدخول أولا للتمتع بجميع ميزات التطبيق"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:layout_margin="15sp"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_or_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="تسجيل الدخول / إنشاء حساب"
+        android:textColor="@color/white"
+        android:background="@color/green_for_app"/>
+
+</LinearLayout>

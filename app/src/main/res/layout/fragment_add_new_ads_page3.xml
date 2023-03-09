@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.fragments.addNewAdsFragments.AddNewAdsPage3Fragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:text="@string/other_specifications"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/other_description_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:inputType="text"
+            android:maxLines="5"
+            android:paddingStart="10sp"
+            android:paddingTop="15sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="15sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:text="@string/best_features"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/best_features_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:inputType="text"
+            android:maxLines="5"
+            android:paddingStart="10sp"
+            android:paddingTop="15sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="15sp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:text="عنوان العقار بالتفصيل"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/estate_address_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingTop="15sp"
+            android:paddingBottom="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/price_label_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:text="@string/estate_price"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/price_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="8"
+            android:paddingTop="15sp"
+            android:paddingBottom="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/price_type_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:text="نوع السعر"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/price_type_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:id="@+id/price_type_on_normal_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="7sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:gravity="center"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp"
+                android:text="سعر عادي"
+                android:textAlignment="center"
+                android:textColor="@color/green_for_app"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/price_type_on_soom_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text"
+                android:gravity="center"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp"
+                android:text="@string/in_auction"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:text="@string/advertiser_character"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:id="@+id/owner_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="7sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:gravity="center"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp"
+                android:text="@string/owner"
+                android:textAlignment="center"
+                android:textColor="@color/green_for_app"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/commissioner_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text"
+                android:gravity="center"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp"
+                android:text="@string/commissioner"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/commissioner_number_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:hint="@string/commissioner_number"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingTop="15sp"
+            android:paddingBottom="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:text="رقم المعلن"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ad_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:maxLength="8"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:inputType="number"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:id="@+id/validate_ad_number_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingStart="10sp"
+                android:layout_marginEnd="20sp"
+                android:layout_gravity="center"
+                android:paddingTop="5sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/validate_ad_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="تحقق"
+                    android:textColor="@color/green_for_app"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/ad_number_pb"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/validate_iv"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    tools:visibility="visible"
+                    android:src="@drawable/check_yellow"/>
+
+                <ImageView
+                    android:id="@+id/note_valid_iv"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    tools:visibility="visible"
+                    android:src="@drawable/ic_error"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deposit_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="4sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25sp"
+                android:textAlignment="viewStart"
+                android:ellipsize="end"
+                android:text="هل يوجد دفع عربون ؟"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/deposit_yes_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20sp"
+                    android:textSize="11sp"
+                    android:text="@string/yes"
+                    />
+
+                <RadioButton
+                    android:id="@+id/deposit_no_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20sp"
+                    android:textSize="11sp"
+                    android:checked="true"
+                    android:text="@string/no"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/deposit_value_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:hint="قيمة العربون"
+            android:singleLine="true"
+            android:paddingStart="10sp"
+            android:maxLength="8"
+            android:inputType="number"
+            android:paddingTop="15sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="15sp"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="11sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/allow_communication_via_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/allow_communication_via_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/allow_communication_via_phone"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/do_you_need_installment_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/do_you_need_installment_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/is_there_a_possibility_of_installment"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previous_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layoutDirection="ltr"
+                android:layout_margin="15sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:text="السابق"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="15sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:text="التالي"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

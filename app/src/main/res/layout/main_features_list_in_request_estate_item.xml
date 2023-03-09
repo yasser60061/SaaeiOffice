@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layoutDirection="rtl"
+    android:layout_margin="5sp">
+
+    <LinearLayout
+        android:id="@+id/number_value_linear_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/feature_name_if_type_number_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_weight="0.7"
+            android:text="--"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/from_number_tv"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:background="@drawable/rectangle_shape"
+                android:gravity="center"
+                android:hint="@string/min"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="5sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/to_number_tv"
+                android:layout_width="50sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:background="@drawable/rectangle_shape"
+                android:gravity="center"
+                android:hint="@string/max"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="5sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_values_linear_item"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/feature_name_if_type_list_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5sp"
+            android:text="---"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="7sp"
+            android:layout_marginEnd="7sp"
+            android:src="@drawable/ic_arrow_forward_green" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/options_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/option_in_main_features_item"
+            tools:visibility="visible"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

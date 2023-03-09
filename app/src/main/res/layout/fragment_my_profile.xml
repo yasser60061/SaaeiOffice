@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.MyProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/notification_rl"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:text="@string/notification"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/notification_on_or_off_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:contentDescription="@string/app_name"
+                    android:theme="@style/Theme.SaaeiOffice.NoActionBar" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/language_rl"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:text="@string/language"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/chosen_language_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:text="العربية"
+                    android:textColor="@color/green_for_app"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/about_us_rl"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:text="@string/about_app"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@drawable/ic_arrow_forward_green"
+                    android:contentDescription="@string/app_name" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/technical_support_rl"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_margin="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:text="@string/technical_support"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:background="@drawable/ic_arrow_forward_green"
+                    android:contentDescription="@string/app_name" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/update_my_profile_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/user_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/user_icon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/user_icon"
+                android:text="@string/edit_profile"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/favorite_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/favorite_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/favorite_green"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/favorite_icon"
+                android:text="@string/favorite_list"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/note_faq_rel"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/note_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/note_icon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/note_icon"
+                android:text="@string/fqa"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/estate_news_rel"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/estate_news_icon"
+                android:layout_width="28sp"
+                android:layout_height="28sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_newspaper_24"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/estate_news_icon"
+                android:text="أخبار العقار"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_us_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/connect_us_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/call_icon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/connect_us_icon"
+                android:text="@string/contact_us"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/shar_my_ads_page_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/share_my_ads_page_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_green_share_24"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/share_my_ads_page_icon"
+                android:text="مشاركة صفحة عقاراتي"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_phone_number_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/change_phone_icon"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_contact_phone"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/change_phone_icon"
+                android:text="@string/change_phone_number"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_office_to_market_place_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/add_office_to_market_place_icon"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/market_place_icon"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/market_place_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/add_office_to_market_place_icon"
+                android:text="إضافة مكتبك إلى المتجر"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/market_place_status_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/market_place_title_tv"
+                android:background="@drawable/rounded_button_elementary1"
+                android:paddingHorizontal="7sp"
+                android:paddingVertical="3sp"
+                android:text=""
+                android:textColor="@color/red_for_app"
+                android:textSize="9sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change_password_rl"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text">
+
+            <ImageView
+                android:id="@+id/change_password_icon"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_password"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="15sp"
+                android:layout_toEndOf="@+id/change_password_icon"
+                android:text="@string/change_password"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@drawable/ic_arrow_forward_green"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/package_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/rounded_button_dark_blue"
+            android:orientation="horizontal"
+            android:paddingStart="50sp"
+            android:paddingEnd="50sp">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/crown" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/package_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/golden_pakage"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تنتهي الباقة بتاريخ   "
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/date_of_package_expired_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="الإعلانات المتاحة"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/available_ads_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10sp"
+                        android:layout_marginEnd="10sp"
+                        android:text="--"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upgrade_the_package_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/rounded_button_dark_blue"
+            android:orientation="horizontal"
+            android:paddingStart="50sp"
+            android:paddingEnd="50sp">
+
+            <ImageView
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/crown" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="@string/upgrade_pakage"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="35sp"
+            android:background="@drawable/rounded_button"
+            android:paddingStart="50sp"
+            android:paddingEnd="50sp"
+            android:text="@string/logout"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

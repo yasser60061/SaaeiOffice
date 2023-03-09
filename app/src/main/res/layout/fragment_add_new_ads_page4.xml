@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.fragments.addNewAdsFragments.AddNewAdsPage4Fragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="4sp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/contraindications_cb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15sp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="@string/are_there_any_contraindications_that_prevent_the_use_of_the_estate"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/contraindications_yes_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20sp"
+                    android:textSize="11sp"
+                    android:text="@string/yes"
+                    />
+
+                <RadioButton
+                    android:id="@+id/contraindications_no_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="20sp"
+                    android:textSize="11sp"
+                    android:checked="true"
+                    android:text="@string/no"
+                    />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/contraindications_description_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:hint="@string/contraindications_detail"
+            android:maxLines="5"
+            android:paddingStart="10sp"
+            android:paddingTop="15sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="15sp"
+            android:inputType="text"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="4sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/undocumented_rights_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="15sp"
+            android:ellipsize="end"
+            android:textAlignment="viewStart"
+            android:text="@string/are_there_some_undocumented_rights"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/undocumented_yes_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20sp"
+                android:textSize="11sp"
+                android:text="@string/yes"
+                />
+
+            <RadioButton
+                android:id="@+id/undocumented_no_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20sp"
+                android:textSize="11sp"
+                android:checked="true"
+                android:text="@string/no"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/undocumented_rights_description_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:hint="@string/rights_details"
+            android:maxLines="5"
+            android:inputType="text"
+            android:paddingStart="10sp"
+            android:paddingTop="15sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="15sp"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="4sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/influentialInformation_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="15sp"
+            android:textAlignment="viewStart"
+            android:ellipsize="end"
+            android:text="@string/is_there_any_information_on_the_estate"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/influentialInformation_yes_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20sp"
+                android:textSize="11sp"
+                android:text="@string/yes"
+                />
+
+            <RadioButton
+                android:id="@+id/influentialInformation_no_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20sp"
+                android:textSize="11sp"
+                android:checked="true"
+                android:text="@string/no"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/influentialInformation_description_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:hint="@string/information_details"
+            android:maxLines="5"
+            android:paddingStart="10sp"
+            android:paddingTop="15sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="15sp"
+            android:inputType="text"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginBottom="4sp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/guarantees_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:ellipsize="end"
+            android:text="@string/are_there_guarantees"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/guarantees_yes_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20sp"
+                android:textSize="11sp"
+                android:text="@string/yes"
+                />
+
+            <RadioButton
+                android:id="@+id/guarantees_no_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20sp"
+                android:textSize="11sp"
+                android:checked="true"
+                android:text="@string/no"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/guarantees_details_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:hint="@string/guarantees_details"
+            android:maxLines="5"
+            android:paddingStart="10sp"
+            android:inputType="text"
+            android:paddingTop="15sp"
+            android:paddingEnd="10sp"
+            android:paddingBottom="15sp"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="15sp"
+        android:gravity="center"
+        android:layout_marginBottom="4sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/saudiBuildingCode_cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15sp"
+            android:textAlignment="viewStart"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:text="@string/compliant_with_the_saudi_building_code"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/saudiBuildingCode_yes_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20sp"
+                android:textSize="11sp"
+                android:text="@string/yes"
+                />
+
+            <RadioButton
+                android:id="@+id/saudiBuildingCode_no_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20sp"
+                android:textSize="11sp"
+                android:checked="true"
+                android:text="@string/no"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previous_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layoutDirection="ltr"
+                android:layout_margin="15sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:text="السابق"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_margin="15sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:text="@string/send"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

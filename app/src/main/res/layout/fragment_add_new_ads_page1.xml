@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.fragments.addNewAdsFragments.AddNewAdsPage1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="5sp"
+            android:text="@string/region"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:padding="5sp">
+
+            <Spinner
+                android:id="@+id/regions_sp"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/region_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="15sp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/down_arrow_green" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/cityTitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:text="@string/city"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/city_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/city_item" />
+
+            <RelativeLayout
+                android:id="@+id/city_temp_rl"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@color/elementary1" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="5sp"
+            android:text="@string/neighborhood"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="10sp"
+            android:padding="5sp">
+
+            <Spinner
+                android:id="@+id/neighborhood_sp"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/neighborhood_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="15sp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/down_arrow_green" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="5sp"
+            android:text="إسم الشارع"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/street_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginStart="7sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:singleLine="true"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:imeOptions="actionDone"
+            android:maxLength="50"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="5sp"
+            android:text="@string/estate_location_on_map"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/estate_location_on_map_rl"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/dashed_line_shape">
+
+            <TextView
+                android:id="@+id/estate_location_on_map_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/as_map_icon"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="5sp"
+            android:text="@string/type_of_estate"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:padding="5sp">
+
+                <Spinner
+                    android:id="@+id/main_category_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_shape_with_green_border"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/main_category_sp_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/down_arrow_green" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_weight="1"
+                android:padding="5sp">
+
+                <Spinner
+                    android:id="@+id/sub_category_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_edit_text"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15sp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/down_arrow_green" />
+
+                <ProgressBar
+                    android:id="@+id/sub_cat_pb"
+                    style="@style/Theme.SaaeiOffice"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/building_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:padding="5sp">
+
+                <EditText
+                    android:id="@+id/building_number_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_edit_text"
+                    android:hint="ادخل رقم العمارة"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:textAlignment="center"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_weight="1"
+                android:padding="5sp">
+
+                <RelativeLayout
+                    android:id="@+id/floor_number_sp_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <Spinner
+                        android:id="@+id/floors_number_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45sp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/rounded_edit_text"
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="15sp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/down_arrow_green" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/start_seal_date_tv_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/start_seal_date_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="45sp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/rounded_edit_text"
+                        android:gravity="center"
+                        android:text="تاريخ بدء البيع"
+                        android:textAlignment="center"
+                        android:textColor="@color/green_for_app"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/floor_and_unit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginTop="5sp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textColor="@color/dark_blue"
+            android:text="اختر رقم الوحدة المخصصة للبيع داخل كل طابق"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/land_number_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/work_area_item" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/floors_and_units_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/unit_in_building_item"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/contract_type_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="5sp"
+            android:text="@string/type_of_contract"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/contract_type_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/estate_type_sale_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/sale"
+                android:textAlignment="center"
+                android:textColor="@color/green_for_app"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/estate_type_rent_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/rent"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rend_period_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="5sp"
+                android:text="@string/choose_rent_period"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/rent_type_daily_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit_text"
+                    android:gravity="center"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="@string/daily"
+                    android:textAlignment="center"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/rent_type_monthly_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit_text"
+                    android:gravity="center"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="@string/monthly"
+                    android:textAlignment="center"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/rent_type_yearly_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit_text"
+                    android:gravity="center"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="@string/yearly"
+                    android:textAlignment="center"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/rent_type_opining_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_edit_text"
+                    android:gravity="center"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="@string/opining"
+                    android:textAlignment="center"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="30sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:paddingStart="80sp"
+            android:paddingEnd="80sp"
+            android:text="التالي"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

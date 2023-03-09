@@ -1,0 +1,40 @@
+package com.saaei12092021.office.model.responseModel.lastContact
+
+import java.io.Serializable
+
+data class From(
+    val accountType: String,
+    val adsCount: Int,
+    val adsPackage: Int,
+    val agencyType: String,
+    val approved: Boolean,
+    val availableAds: Int,
+    val blockReason: String,
+    val city: City,
+    val commercialFile: List<String>,
+    val completProfile: Boolean,
+    val country: Int,
+    val createdAt: String,
+    val deleted: Boolean,
+    val email: String,
+    val enableNotif: Boolean,
+    val fullname: String,
+    val hasAdsPackage: Boolean,
+    val hasPropertyPackage: Boolean,
+    val id: Int,
+    val img: String,
+    val isVerified: Boolean,
+    val lastSeen: Long,
+    val online: Boolean,
+    val packageEndDateMillSec: Long,
+    val packageStartDateMillSec: Long,
+    val phone: String,
+    val rate: Int,
+    val type: String,
+    val updatedAt: String,
+    val viewsCount: Int,
+    val workArea: List<Int>,
+    val workCategory: List<Int>,
+    val workCity: List<Int>,
+    val workSubCategory: List<Int>
+): Serializable

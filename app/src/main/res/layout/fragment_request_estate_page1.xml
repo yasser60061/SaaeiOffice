@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.fragments.requestEstateFragments.RequestEstatePage1Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:text="@string/region"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:padding="5sp">
+
+            <Spinner
+                android:id="@+id/regions_sp"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="15sp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/down_arrow_green" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/cityTitle_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginEnd="15sp"
+            android:text="المدينة"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="start">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/city_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/city_item" />
+
+            <RelativeLayout
+                android:id="@+id/city_temp_rl"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@color/elementary1" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:text="الاحياء المحتملة للعقار المطلوب"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5sp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/area_rv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/work_area_item" />
+
+            <RelativeLayout
+                android:id="@+id/area_temp_rl"
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="@color/elementary1" />
+
+            <ProgressBar
+                android:id="@+id/city_pb"
+                style="@style/Theme.SaaeiOffice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:text="نوع العقار"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_weight="1"
+                android:padding="5sp">
+
+                <Spinner
+                    android:id="@+id/main_category_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_shape_with_green_border" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15sp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/down_arrow_green" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:layout_weight="1"
+                android:padding="5sp">
+
+                <Spinner
+                    android:id="@+id/sub_category_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/rounded_edit_text" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="15sp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/down_arrow_green" />
+
+                <ProgressBar
+                    android:id="@+id/sub_cat_pb"
+                    style="@style/Theme.SaaeiOffice"
+                    android:layout_width="25sp"
+                    android:layout_height="25sp"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="4sp"
+            android:text="نوع العقد"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:id="@+id/estate_type_sale_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:maxLength="8"
+                android:textColor="@color/green_for_app"
+                android:text="@string/sale"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/estate_type_rent_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/rent"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rend_period_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="4sp"
+            android:text="@string/choose_rent_period"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp">
+
+            <TextView
+                android:id="@+id/rent_type_daily_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/daily"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/rent_type_monthly_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/monthly"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/rent_type_yearly_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/yearly"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/rent_type_opining_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edit_text"
+                android:gravity="center"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="@string/opining"
+                android:textAlignment="center"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="4sp"
+            android:text="@string/real_estate_area"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5sp">
+
+        <EditText
+            android:id="@+id/real_estate_area_min_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="8"
+            android:hint="أقل مساحة"
+            android:textColor="@color/green_for_app"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/real_estate_area_max_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:gravity="center"
+            android:maxLength="8"
+            android:hint="أكبر مساحة"
+            android:paddingTop="10sp"
+            android:textColor="@color/green_for_app"
+            android:inputType="number"
+            android:paddingBottom="10sp"
+            android:textAlignment="center"
+            android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="30sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:paddingStart="100sp"
+            android:paddingEnd="100sp"
+            android:textAllCaps="false"
+            android:text="التالي"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

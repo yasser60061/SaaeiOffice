@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.activities.SupervisorProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/green_for_app"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/back_linear"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back_image" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="تحديث الملف الشخصي"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/main_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/office_logo_iv"
+                    android:layout_width="129sp"
+                    android:layout_height="129sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="10sp"
+                    android:elevation="5dp"
+                    android:src="@drawable/profile_image"
+                    app:civ_border_color="@color/dark_blue"
+                    app:civ_border_width="2sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rounded_button_green"
+                    android:paddingStart="20sp"
+                    android:paddingTop="3sp"
+                    android:paddingEnd="20sp"
+                    android:paddingBottom="3sp"
+                    android:text="حساب مشرف"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+               <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:text="الإسم"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/supervisor_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/rounded_shape_with_green_border"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="15sp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/phone_number_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/rounded_shape_with_green_border"
+                    android:inputType="phone"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="15sp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15sp"
+                    android:text="@string/e_mail"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email_address_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="3sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/rounded_shape_with_green_border"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="15sp"
+                    android:textSize="12sp" />
+
+
+                <Button
+                    android:id="@+id/complete_profile_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginBottom="50sp"
+                    android:background="@drawable/rounded_button"
+                    android:maxLength="15"
+                    android:paddingStart="50sp"
+                    android:paddingEnd="50sp"
+                    android:text="حفظ"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/main_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

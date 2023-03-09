@@ -1,0 +1,40 @@
+package com.saaei12092021.office.model.responseModel.SignUpResponse
+
+data class User(
+    val accountType: String,
+    val adsCount: Int,
+    val agencyType: String,
+    val approved: Boolean,
+    val availableAds: Int,
+    val blockReason: String,
+    val commercialFile: List<String>,
+    val completProfile: Boolean,
+    val country: Country,
+    val createdAt: String,
+    val deleted: Boolean,
+    val email: String,
+    val enableNotif: Boolean,
+    val fullname: String,
+    val hasAdsPackage: Boolean,
+    val hasPropertyPackage: Boolean,
+    val id: Int,
+    val isVerified: Boolean,
+    val online: Boolean,
+    val phone: String,
+    val rate: Int,
+    val type: String,
+    val updatedAt: String,
+    val viewsCount: Int,
+    val img: String?,
+    val workArea: List<Int?>,
+    val workCategory: List<Int?>,
+    val workCity: List<Int?>,
+    val workSubCategory: List<Int?>,
+    val idNumber: String,
+    val idType: String,
+    val adNumber : String,
+    val lastSeen: Int?, // in new response only
+
+  //  val city: null ,
+
+)

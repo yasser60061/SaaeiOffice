@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:paddingTop="50sp"
+    tools:context=".ui.fragments.AdsFromSocketAsListFragment">
+
+    <View
+        android:id="@+id/temp_view"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_height="40sp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/view_pager_relative"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_marginStart="4sp"
+            android:layout_marginEnd="4sp"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                android:backgroundTint="@color/elementary1"
+                app:cardCornerRadius="10sp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:layout_alignParentBottom="true">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/home_announcement_view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="100sp"
+                        android:layout_gravity="center" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSliderIndicators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:layout_marginBottom="4sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ads_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30sp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/favorite_item" />
+
+        <TextView
+            android:id="@+id/ads_as_list_result_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200sp"
+            android:text="القائمة فارغة"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

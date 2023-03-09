@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    tools:context=".ui.fragments.myEstatesFragment.ContactRequestsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contact_request_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30sp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/contact_request_item" />
+
+        <TextView
+            android:id="@+id/result_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="لا يوجد طلبات سابقة"
+            android:layout_centerInParent="true"
+            android:textColor="@color/dark_blue"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textAlignment="center"
+            android:textStyle="bold|italic"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

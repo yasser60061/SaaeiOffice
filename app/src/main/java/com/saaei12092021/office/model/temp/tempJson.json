@@ -1,0 +1,147 @@
+{
+  "fullname": "شركة المشيطي العقارية",
+  "agencyType": "OFFICE",
+  "phone": "+966532278000",
+  "email": "fasam1000@gmail.com",
+  "type": "OFFICE",
+  "accountType": "ACTIVE",
+  "approved": true,
+  "isVerified": true,
+  "adsCount": 531,
+  "city": {
+    "cityName": "بريدة",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        43.98181200000001,
+        26.3592309
+      ]
+    },
+    "region": 1,
+    "country": 1,
+    "cityName_ar": "بريدة",
+    "cityName_en": "بريدة",
+    "id": 3
+  },
+  "img": "https://saaei-api-v2.algorithms.ws/uploads/16284206031628420603_610fb9fba1db9.jpg",
+  "online": true,
+  "lastSeen": 1654782158000,
+  "blockReason": "",
+  "enableNotif": true,
+  "idType": "3",
+  "idNumber": "1010287700",
+  "id": 3034,
+  "createdAt": "2022-02-02T07:04:24.650Z",
+  "updatedAt": "2022-06-09T13:42:38.706Z",
+  "country": {
+    "countryName": "KSA",
+    "countryName_en": "KSA",
+    "countryName_ar": "المملكه العربيه السعوديه",
+    "img": "https://res.cloudinary.com/boody-car/image/upload/v1643786757/clkm5zs9yslw6ribiwel.png",
+    "countryCode": "+966",
+    "numbersCount": 9,
+    "isoCode": "SA",
+    "hint": " ",
+    "id": 1
+  },
+  "isMarketPlace": false,
+  "marketPlace": {
+    "status": "REFUSED",
+    "id": 26
+  },
+  "rate": 0,
+  "rateCount": 0,
+  "rateNumbers": 0,
+  "adsPackage": {
+    "name": "Silver",
+    "name_ar": "فضيه",
+    "name_en": "Silver",
+    "description": "null",
+    "description_ar": "حلول متكاملة لتسويق عقاراتك الكترونيا باستخدام مميزات مصنة ساعي حيث سهولة الاستخدام والدعم الفني السريع والوصول لعملاء أكبر. الكثير من المستخدمين للمنصة يبحثون عن العقارات يوميا على منصة ساعي. لا تتردد بالتواصل معنا في حال احتجت لمساعدة.\nالباقة الفضية تمكنك من عرض العقارات للبيع وللتأجير بعدد محدود كما يمكنك الاستفادة من خدمة الدفع الالكتروني وعرض مميزات عقاراتك بشكل يصل لذائقة المستخدمين وعرض العقارات باستخدام خاصية التجول الافتراضي. يمكنك إضافة عدد محدود من المشرفين للقيام بادارة حسابك والتفاعل مع المستخدمين في الاستفسارات وتحديث العروض.",
+    "description_en": "null",
+    "defaultPackage": true,
+    "availableAds": 150,
+    "supervisors": 1,
+    "building": true,
+    "plan": false,
+    "id": 1
+  },
+  "packageStartDateMillSec": 1652621785000,
+  "packageEndDateMillSec": 1655300185000,
+  "hasPropertyPackage": false,
+  "commercialFile": [
+    "https://saaei-api-oci.algorithms.ws/media/6916c5d4-5884-4915-9479-8b385117c4b9.pdf"
+  ],
+  "hasAdsPackage": true,
+  "availableAds": 480,
+  "workArea": [
+    {
+      "areaName": "حي الافق",
+      "id": 8
+    },
+    {
+      "areaName": "حي الأندلس",
+      "id": 4
+    },
+    {
+      "areaName": "الحرم",
+      "id": 3
+    },
+    {
+      "areaName": "حي الوادي",
+      "id": 5
+    },
+    {
+      "areaName": "الروضة",
+      "id": 2
+    }
+  ],
+  "workCity": [
+    {
+      "cityName": "بريدة",
+      "id": 3
+    },
+    {
+      "cityName": "مكه المكرمة",
+      "id": 2
+    },
+    {
+      "cityName": "الرياض",
+      "id": 1
+    }
+  ],
+  "workCategory": [
+    {
+      "categoryName": "lands",
+      "type": "LAND",
+      "id": 3
+    },
+    {
+      "categoryName": "others",
+      "type": "NORMAL",
+      "id": 5
+    }
+  ],
+  "workSubCategory": [
+    {
+      "categoryName": "trade",
+      "type": "NORMAL",
+      "id": 35
+    },
+    {
+      "categoryName": "farms",
+      "type": "NORMAL",
+      "id": 31
+    }
+  ],
+  "saleAdsCount": 531,
+  "rentAdsCount": 0,
+  "adsRequestCount": 6,
+  "contactRequestCount": 19,
+  "completedAdsRequest": 0,
+  "unCompletedAdsRequest": 4,
+  "viewsCount": 0,
+  "completedAdsCount": 1,
+  "completedSaleAdsCount": 1,
+  "completedRentAdsCount": 0
+}

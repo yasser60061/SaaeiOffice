@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.activities.chatActivity.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_for_app"
+        android:layoutDirection="ltr">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_image"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_rl"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/contact_iv"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/profile_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_name_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toStartOf="@+id/contact_rl">
+
+            <TextView
+                android:id="@+id/contact_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="30sp"
+        android:background="@drawable/rounded_edit_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/request_details_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:text="معلومات الطلب"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/messages_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:text="المراسلات"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chat_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ads_info_card_mini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="4sp"
+            android:backgroundTint="@color/white"
+            android:visibility="gone"
+            app:cardCornerRadius="7sp"
+            tools:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/ads_info_relative_mini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/elementary1">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ads_image_mini_iv"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    app:riv_corner_radius="7sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_toEndOf="@+id/ads_image_mini_iv"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_mini_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/description_mini_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginEnd="2sp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:singleLine="true"
+                        android:text="--"
+                        android:textSize="8sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ads_info_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="4sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="4sp"
+            android:backgroundTint="@color/white"
+            android:visibility="gone"
+            app:cardCornerRadius="15sp"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/add_estate_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="8sp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5sp"
+                    app:cardCornerRadius="15sp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/estate_Iv"
+                        android:layout_width="129sp"
+                        android:layout_height="129sp"
+                        android:contentDescription="@string/app_name"
+                        android:foregroundGravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@color/elementary1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="--"
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/price_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="2sp"
+                                    android:text="--"
+                                    android:textColor="@color/green_for_app"
+                                    android:textSize="10sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="2sp"
+                                    android:layout_marginEnd="2sp"
+                                    android:text="ريال"
+                                    android:textColor="@color/green_for_app"
+                                    android:textSize="10sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="2sp"
+                            android:background="@drawable/as_map_icon"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/city_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="2sp"
+                            android:layout_marginEnd="2sp"
+                            android:text="--"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="2sp"
+                            android:text="-"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="10sp" />
+
+
+                        <TextView
+                            android:id="@+id/area_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="2sp"
+                            android:layout_marginEnd="2sp"
+                            android:text="--"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/description_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginEnd="2sp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="--"
+                        android:textSize="8sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/property_rv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:listitem="@layout/properties_item" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/action_buttons_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingStart="15sp"
+                android:paddingTop="7sp"
+                android:paddingEnd="15sp"
+                android:paddingBottom="7sp"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/complete_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="7sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_custom_nav_bar_green"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="تم الإتفاق"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/close_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button_red"
+                    android:paddingStart="5sp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="5sp"
+                    android:paddingBottom="10sp"
+                    android:text="لم يتم الإتفاق"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/withdrawal_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50sp"
+                android:layout_marginTop="7sp"
+                android:layout_marginEnd="50sp"
+                android:layout_marginBottom="7sp"
+                android:background="@drawable/rounded_button_orange"
+                android:paddingStart="20sp"
+                android:paddingTop="10sp"
+                android:paddingEnd="20sp"
+                android:paddingBottom="10sp"
+                android:text="إنسحاب"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <View
+                android:id="@+id/for_adjust_only_view"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_alignParentTop="true"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/message_content_container_rl"
+                android:layout_below="@+id/for_adjust_only_view">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/chat_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/chat_item" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/typing_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15sp"
+                android:layout_marginEnd="15sp"
+                android:paddingBottom="60sp"
+                android:text="يكتب الان ..."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/message_content_container_rl"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="3sp"
+                android:background="@drawable/light_green_tree_for_edite_chat_container"
+                android:layoutDirection="rtl"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/send_message_rl"
+                    android:layout_width="50sp"
+                    android:layout_height="60sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layoutDirection="ltr">
+
+                    <ImageView
+                        android:id="@+id/send_message_iv"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_round_send" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/add_file_rl"
+                    android:layout_width="35sp"
+                    android:layout_height="60sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:id="@+id/add_file_iv"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_round_add_green" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/deposit_and_voice_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/add_file_rl"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/deposit_rl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="5sp"
+                        android:paddingEnd="5sp"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/deposit_icon_iv"
+                            android:layout_width="25sp"
+                            android:layout_height="25sp"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/rounded_button_dark_blue"
+                            android:padding="7sp"
+                            android:src="@drawable/deposit"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/deposit_text_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/rounded_button_dark_blue"
+                            android:drawableEnd="@drawable/deposit"
+                            android:paddingStart="10sp"
+                            android:paddingTop="5sp"
+                            android:paddingEnd="10sp"
+                            android:paddingBottom="5sp"
+                            android:text="دفع عربون  "
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="40sp"
+                        android:layout_height="60sp">
+
+                        <com.devlomi.record_view.RecordButton
+                            android:id="@+id/record_button"
+                            android:layout_width="40sp"
+                            android:layout_height="60sp"
+                            android:layout_centerVertical="true"
+                            android:paddingStart="5sp"
+                            android:paddingEnd="5sp"
+                            android:scaleType="centerInside"
+                            app:mic_icon="@drawable/ic_voice_green" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/message_content_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/deposit_and_voice_linear"
+                    android:layout_toEndOf="@+id/send_message_rl"
+                    android:background="@drawable/rounded_elementary_edit_text"
+                    android:paddingStart="10sp"
+                    android:paddingTop="5sp"
+                    android:paddingEnd="10sp"
+                    android:paddingBottom="5sp"
+                    android:textSize="12sp" />
+
+                <com.devlomi.record_view.RecordView
+                    android:id="@+id/record_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20sp"
+                    android:layout_marginEnd="20sp"
+                    android:layout_toStartOf="@+id/deposit_and_voice_linear"
+                    android:layout_toEndOf="@+id/send_message_rl"
+                    android:layoutDirection="ltr"
+                    app:counter_time_color="#ff0000"
+                    app:slide_to_cancel_arrow="@drawable/recv_ic_arrow"
+                    app:slide_to_cancel_arrow_color="#000000"
+                    app:slide_to_cancel_bounds="8dp"
+                    app:slide_to_cancel_margin_right="10dp"
+                    app:slide_to_cancel_text="جاري التسجيل" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/status_description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15sp"
+                android:background="@color/green_for_app_2"
+                android:padding="15sp"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="15sp"
+                android:textStyle="italic|bold"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/request_details_id"
+        layout="@layout/fragment_requested_estate_details" />
+
+</LinearLayout>

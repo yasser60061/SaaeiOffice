@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.rygelouv:android-audio-sensei:0.1.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1a5e2cc20d056b6fa71c78d73e912c6b/transformed/jetified-android-audio-sensei-0.1.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1a5e2cc20d056b6fa71c78d73e912c6b/transformed/jetified-android-audio-sensei-0.1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1a5e2cc20d056b6fa71c78d73e912c6b/transformed/jetified-android-audio-sensei-0.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1a5e2cc20d056b6fa71c78d73e912c6b/transformed/jetified-android-audio-sensei-0.1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.rygelouv/android-audio-sensei/0.1.2/ac5e8c9ccb7636fd49e1db9b3377c1f5c1b4a3ed/android-audio-sensei-0.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

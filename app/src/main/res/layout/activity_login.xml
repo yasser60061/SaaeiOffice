@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.activities.LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/skip_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+          >
+
+            <ImageView
+                android:id="@+id/skip_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_image" />
+
+            <TextView
+                android:id="@+id/skip_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/skip"
+                android:textColor="@color/green_for_app"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="50sp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/splash_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_edit_text"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/country_code_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:ccp_clickable="false"
+                    android:layout_marginStart="5sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:ccp_defaultNameCode="SA"/>
+
+                <EditText
+                    android:id="@+id/phone_number_et"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5sp"
+                    android:layout_height="45sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="5X XXX XXXX"
+                    android:inputType="phone"
+                    android:maxLength="9"
+                    android:paddingStart="15sp"
+                    android:paddingEnd="15sp"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15sp"
+                android:text="كلمة المرور"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/rounded_edit_text"
+                android:inputType="textPassword"
+                android:paddingStart="15sp"
+                android:paddingEnd="12sp" />
+
+            <TextView
+                android:id="@+id/forget_password_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:textAlignment="textEnd"
+                android:paddingBottom="20sp"
+                android:textColor="@color/green_for_app"
+                android:text="@string/forget_password"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:cropToPadding="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/splash_background_1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/login_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15sp"
+                        android:background="@drawable/rounded_button"
+                        android:paddingStart="80sp"
+                        android:paddingEnd="80sp"
+                        android:singleLine="true"
+                        android:text="@string/login_text"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/create_account_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="15sp"
+                        android:text="إنشاء حساب"
+                        android:textColor="@color/green_for_app"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

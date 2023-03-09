@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_top_corner_transparent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.addAndRequestEstateDialogFragment.AddAndRequestEstateDialogFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:id="@+id/request_estate_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/green_circle_bg"
+                    android:contentDescription="@string/app_name"
+                    android:foregroundGravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/my_order_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="طلب عقار"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button_red"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginEnd="15sp"
+                    android:paddingStart="10sp"
+                    android:paddingTop="3sp"
+                    android:paddingEnd="10sp"
+                    android:paddingBottom="3sp"
+                    android:text=" مجانا "
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/request_estate_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text=" هي خدمة تمكنك من طلب عقار بمواصفات خاصة تصل الى أكثر من _ مكتب مسجل معتمد لدينا في التطبيق"
+                    android:textAlignment="center"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:id="@+id/add_estate_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/green_circle_bg"
+                    android:contentDescription="@string/app_name"
+                    android:foregroundGravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/my_order_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/add_estate"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/add_estate_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="هي خدمة تمكنك من عرض عقاراتك بالتطبيق ولديك عدد معين حسب الباقة، المتبقي لعدد باقتك هو _ إضافات"
+                    android:textSize="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/update_package_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_button_dark_blue"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/crown" />
+
+                    <TextView
+                        android:id="@+id/upgrade_package_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="@string/upgrade_package"
+                        android:textColor="@color/white"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="7dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/white_circle_bg"
+            android:padding="8dp"
+            android:src="@drawable/plus" />
+
+    </RelativeLayout>
+
+</LinearLayout>

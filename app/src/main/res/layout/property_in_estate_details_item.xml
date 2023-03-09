@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10sp"
+    android:layout_marginStart="2sp"
+    android:layout_marginEnd="2sp"
+    android:layoutDirection="rtl"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/property_logo_iv"
+        android:layout_width="15sp"
+        android:layout_height="15sp"
+        android:layout_gravity="center"
+        android:layout_margin="3sp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/property_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="3sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="--"
+        android:textSize="7sp" />
+
+    <TextView
+        android:id="@+id/property_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="3sp"
+        android:text="--"
+        android:textSize="7sp" />
+
+</LinearLayout>

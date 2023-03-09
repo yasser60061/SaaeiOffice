@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapsFragment">
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.saaei12092021.office.ui.fragments.FAQFragment"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.saaei12092021.office.ui.fragments.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" >
+        <action
+            android:id="@+id/action_myProfileFragment_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_aboutUsAndTermsFragment"
+            app:destination="@id/aboutUsAndTermsFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_myProfileFragment_to_contactUsFragment"
+            app:destination="@id/contactUsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsAndTermsFragment"
+        android:name="com.saaei12092021.office.ui.fragments.AboutUsAndTermsFragment"
+        android:label="fragment_about_us_and_terms"
+        tools:layout="@layout/fragment_about_us_and_terms" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.saaei12092021.office.ui.fragments.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_estateDetailsFromMapMarkerFragment"
+            app:destination="@id/estateDetailsFromMapMarkerFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_adsFromSocketAsListFragment"
+            app:destination="@id/adsFromSocketAsListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAndRequestDrugDialogFragment"
+        android:name="com.saaei12092021.office.ui.fragments.addAndRequestEstateDialogFragment.AddAndRequestEstateDialogFragment"
+        android:label="fragment_add_and_request_drugk_dialog"
+        tools:layout="@layout/fragment_add_and_request_estate_dialog" />
+    <fragment
+        android:id="@+id/mapsMenuDialogFragment"
+        android:name="com.saaei12092021.office.ui.fragments.MapsMenuDialogFragment"
+        android:label="fragment_maps_menu_dialog"
+        tools:layout="@layout/fragment_maps_menu_dialog" />
+    <dialog
+        android:id="@+id/newOrderFromCustomerFragment"
+        android:name="com.saaei12092021.office.ui.fragments.NewContactRequestFragment"
+        android:label="fragment_new_order_from_customer"
+        tools:layout="@layout/fragment_new_contact_request" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.saaei12092021.office.ui.fragments.notificationsFragment.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.saaei12092021.office.ui.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/mainMyEstateFragment"
+        android:name="com.saaei12092021.office.ui.fragments.myEstatesFragment.MainMyEstateFragment"
+        android:label="fragment_main_my_estate"
+        tools:layout="@layout/fragment_main_my_estate" >
+        <action
+            android:id="@+id/action_mainMyEstateFragment_to_requestedEstateDetailsFragment"
+            app:destination="@id/requestedEstateDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainRequestEstateFragment"
+        android:name="com.saaei12092021.office.ui.fragments.requestEstateFragments.MainRequestEstateFragment"
+        android:label="MainRequestEstateFragment" />
+    <dialog
+        android:id="@+id/estateDetailsFromMapMarkerFragment"
+        android:name="com.saaei12092021.office.ui.fragments.EstateDetailsFromMapMarkerFragment"
+        android:label="fragment_estate_details_from_map_marker"
+        tools:layout="@layout/fragment_estate_details_from_map_marker" />
+    <fragment
+        android:id="@+id/adsFromSocketAsListFragment"
+        android:name="com.saaei12092021.office.ui.fragments.AdsFromSocketAsListFragment"
+        android:label="AdsFromSocketAsListFragment" />
+    <fragment
+        android:id="@+id/mainAddNewAdsFragment"
+        android:name="com.saaei12092021.office.ui.fragments.addNewAdsFragments.MainAddNewAdsFragment"
+        android:label="MainAddNewAdsFragment" >
+        <action
+            android:id="@+id/action_mainAddNewAdsFragment_to_estateLocationMapFragment"
+            app:destination="@id/estateLocationMapFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/estateLocationMapFragment"
+        android:name="com.saaei12092021.office.ui.fragments.addNewAdsFragments.AddNewEstateLocationOnMapFragment"
+        android:label="fragment_estate_location_map"
+        tools:layout="@layout/fragment_add_new_estate_location_on_map" />
+    <fragment
+        android:id="@+id/requestedEstateDetailsFragment"
+        android:name="com.saaei12092021.office.ui.fragments.RequestedEstateDetailsFragment"
+        android:label="fragment_requested_estate_details"
+        tools:layout="@layout/fragment_requested_estate_details" />
+    <fragment
+        android:id="@+id/contactUsFragment"
+        android:name="com.saaei12092021.office.ui.fragments.ContactUsFragment"
+        android:label="ContactUsFragment" />
+</navigation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="70sp"
+    android:layout_height="70sp"
+    android:layout_marginTop="7sp"
+    android:layout_marginBottom="7sp"
+    android:layout_marginStart="7sp"
+    android:layout_marginEnd="7sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/city_iv"
+        android:layout_width="66sp"
+        android:layout_height="66sp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/saaei_temp_image"
+        app:civ_border_color="@color/elementary1"
+        app:civ_border_width="4sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/back_city_iv"
+        android:layout_width="66sp"
+        android:layout_height="66sp"
+        android:layout_centerInParent="true"
+        android:src="@android:color/transparent"
+        app:civ_border_color="@color/elementary1"
+        app:civ_border_width="1sp" />
+
+    <TextView
+        android:id="@+id/city_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:maxLines="3"
+        android:text="--"
+        android:textColor="@color/white"
+        android:textSize="9sp" />
+
+</RelativeLayout>

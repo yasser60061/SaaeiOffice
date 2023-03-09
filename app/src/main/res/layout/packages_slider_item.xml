@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300sp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginHorizontal="10sp"
+    android:background="@drawable/rounded_button_dark_blue"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:paddingTop="15sp"
+    android:paddingBottom="15sp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15sp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/crown_green" />
+
+    <TextView
+        android:id="@+id/package_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="20sp"
+        android:text="--"
+        android:textColor="@color/white" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:text="عدد الإعلانات المتاحة"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mor_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="20sp"
+            android:text="قراءة المزيد"
+            android:textColor="@color/green_for_app"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/number_of_ads_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="10sp"
+        android:background="@drawable/rounded_button_green"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="--"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:text="عدد المشرفين"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/supervisor_number_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="10sp"
+        android:background="@drawable/rounded_button_green"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="--"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:text="مسموح بإضافة مخطط"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/can_add_planned_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="10sp"
+        android:background="@drawable/rounded_button_green"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="--"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:text="مسموح بإضافة عمارة"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/can_add_building_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="10sp"
+        android:background="@drawable/rounded_button_green"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:text="--"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/yearly_price_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="9sp"
+            android:layout_weight="1"
+            android:background="@drawable/round_orange_shape_with_white_border"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/yearly_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:text="لا يوجد"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3sp"
+                android:text="إشترك لمدة سنة"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/monthly_price_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9sp"
+            android:layout_marginEnd="15sp"
+            android:layout_weight="1"
+            android:background="@drawable/round_orange_shape_with_white_border"
+            android:orientation="vertical"
+            android:padding="9sp">
+
+            <TextView
+                android:id="@+id/monthly_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5sp"
+                android:text="لا يوجد"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="3sp"
+                android:text="إشترك لمدة شهر"
+                android:textColor="@color/black"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

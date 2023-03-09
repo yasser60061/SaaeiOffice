@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10sp"
+    android:layout_margin="20sp"
+    android:layoutDirection="rtl"
+    android:padding="20sp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/language_english_rb_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15sp"
+                    android:textDirection="ltr"
+                    android:paddingRight="10sp"
+                    android:paddingLeft="10sp"
+                    android:text="English" />
+
+                <RadioButton
+                    android:id="@+id/language_arabic_rb_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15sp"
+                    android:paddingRight="10sp"
+                    android:textDirection="ltr"
+                    android:paddingLeft="10sp"
+                    android:text="العربية" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/language_apply_btn_item"
+                android:layout_width="150sp"
+                android:layout_height="50sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15sp"
+                android:background="@drawable/rounded_button_green"
+                android:text="@string/apply"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:background="@drawable/rectangle_shape"
+    android:layoutDirection="rtl"
+    android:padding="5sp"
+    app:cardCornerRadius="10sp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/land_or_unit_number_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/red"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="  "
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/land_or_unit_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingEnd="5sp"
+            android:text="--"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/floor_number_et"
+        android:layout_width="wrap_content"
+        android:layout_height="42sp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rectangle_shape"
+        android:hint="رقم الطابق بالعمارة"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10sp" />
+
+</RelativeLayout>

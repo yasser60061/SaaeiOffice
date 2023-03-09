@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_sheet_top_corner_transparent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/bottom_sheet_close_rl"
+            android:layout_width="100sp"
+            android:layout_height="80sp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/bottom_sheet_close_image"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/close_image" />
+
+        </RelativeLayout>
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/progress_bar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            />-->
+
+        <WebView
+            android:id="@+id/condition_and_terms_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/text_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5sp"
+                />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

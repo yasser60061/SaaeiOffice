@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginEnd="15sp"
+    android:layout_marginBottom="5sp"
+    android:gravity="center"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/my_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="7sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/friend_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingStart="5sp"
+            android:paddingEnd="5sp"
+            android:textSize="7sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5sp"
+        android:layout_marginStart="5sp"
+        android:layout_marginBottom="3sp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/my_image_iv"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:layout_marginStart="3sp"
+            android:layout_marginTop="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginBottom="3sp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:riv_corner_radius="15sp"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/my_pdf_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="3sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="3sp"
+                android:layout_marginBottom="3sp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/pdf_image"
+                app:riv_corner_radius="15sp" />
+
+            <TextView
+                android:id="@+id/my_pdf_tv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_elementary1"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_video_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="3sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="3sp"
+                android:layout_marginBottom="3sp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_video_24"
+                app:riv_corner_radius="15sp" />
+
+            <TextView
+                android:id="@+id/my_video_tv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_elementary1"
+                android:ellipsize="start"
+                android:singleLine="true"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_message_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/my_message_shap_in_chat_elementary1"
+            android:paddingStart="15sp"
+            android:paddingTop="10sp"
+            android:paddingEnd="15sp"
+            android:paddingBottom="10sp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/my_message_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/received_image_iv"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="3sp"
+            android:layout_marginTop="3sp"
+            android:layout_marginEnd="3sp"
+            android:layout_marginBottom="3sp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:riv_corner_radius="15sp"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/received_pdf_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="3sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="3sp"
+                android:layout_marginBottom="3sp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/pdf_image"
+                app:riv_corner_radius="15sp" />
+
+            <TextView
+                android:id="@+id/received_pdf_tv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_green"
+                android:ellipsize="start"
+                android:paddingStart="10sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="5sp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/received_video_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="3sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginEnd="3sp"
+                android:layout_marginBottom="3sp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_video_24"
+                app:riv_corner_radius="15sp" />
+
+            <TextView
+                android:id="@+id/received_video_tv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button_green"
+                android:ellipsize="start"
+                android:paddingStart="10sp"
+                android:paddingTop="5sp"
+                android:paddingEnd="10sp"
+                android:paddingBottom="5sp"
+                android:singleLine="true"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/received_message_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_three_corner"
+            android:paddingStart="15sp"
+            android:paddingTop="10sp"
+            android:paddingEnd="15sp"
+            android:paddingBottom="10sp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/received_message_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <com.rygelouv.audiosensei.player.AudioSenseiPlayerView
+            android:id="@+id/my_audio_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="70sp"
+            android:background="@color/elementary1"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.rygelouv.audiosensei.player.AudioSenseiPlayerView
+            android:id="@+id/received_audio_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70sp"
+            android:background="@color/green_for_app"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/message_date_and_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:layout_toEndOf="@+id/seen_relative"
+            android:layoutDirection="ltr"
+            android:text="--"
+            android:textColor="@color/green_for_app"
+            android:textSize="8sp" />
+
+        <RelativeLayout
+            android:id="@+id/seen_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/is_seen_iv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/check_green"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/is_not_seen_iv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_alignParentStart="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/check_elementary"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/used_as_marker_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:text=""
+            android:textColor="@android:color/transparent"
+            android:textSize="1sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

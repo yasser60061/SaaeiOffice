@@ -1,0 +1,131 @@
+{
+  "project_info": {
+    "project_number": "1049231795506",
+    "firebase_url": "https://saaei-b43e6-default-rtdb.firebaseio.com",
+    "project_id": "saaei-b43e6",
+    "storage_bucket": "saaei-b43e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049231795506:android:8325e7d10eedf11bc2632b",
+        "android_client_info": {
+          "package_name": "com.saaei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049231795506-dik3iaqdqm5pff0ihuu8gianolq7vecn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saaei",
+            "certificate_hash": "8a51eba598054704a547af7e98ea12af8edbfcfb"
+          }
+        },
+        {
+          "client_id": "1049231795506-khj83vmupl3l9h8r1aeo21331r0l5u67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saaei",
+            "certificate_hash": "934adb47ab7f3ed3a34c21d68dcfa1646e4ab388"
+          }
+        },
+        {
+          "client_id": "1049231795506-b9263h5c6qinukvj47k4o6qgf53l5i7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPuo6O_H6fqjC8bLBXCLjNhwpzoKemi1k"
+        },
+        {
+          "current_key": "AIzaSyAo_3puSzGXHfQ410eYOeCsk1qrKGjSy1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049231795506-b9263h5c6qinukvj47k4o6qgf53l5i7o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1049231795506-0ospplt4cc4vq3uejk94dro39tm0dalv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.smaat.saaei-App",
+                "app_store_id": "1586113817"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1049231795506:android:136aaee31fee90c2c2632b",
+        "android_client_info": {
+          "package_name": "com.saaei12092021.office"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1049231795506-7ijskldfoo52klp2rpkf2m1vj2c0t3mo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saaei12092021.office",
+            "certificate_hash": "ac561154c380d02fa8a3915273e9416ac98a5031"
+          }
+        },
+        {
+          "client_id": "1049231795506-qj0t049ucvvgevmumcu3itjgokq2ho4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saaei12092021.office",
+            "certificate_hash": "4aa057c8918b07af8920a27338656569eef1c0d3"
+          }
+        },
+        {
+          "client_id": "1049231795506-rlt8lesmto0tqdcildjq40ua2p5ut835.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saaei12092021.office",
+            "certificate_hash": "8a51eba598054704a547af7e98ea12af8edbfcfb"
+          }
+        },
+        {
+          "client_id": "1049231795506-b9263h5c6qinukvj47k4o6qgf53l5i7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPuo6O_H6fqjC8bLBXCLjNhwpzoKemi1k"
+        },
+        {
+          "current_key": "AIzaSyAo_3puSzGXHfQ410eYOeCsk1qrKGjSy1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1049231795506-b9263h5c6qinukvj47k4o6qgf53l5i7o.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1049231795506-0ospplt4cc4vq3uejk94dro39tm0dalv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.smaat.saaei-App",
+                "app_store_id": "1586113817"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

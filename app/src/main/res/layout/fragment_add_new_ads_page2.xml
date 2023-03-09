@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="rtl"
+    tools:context=".ui.fragments.addNewAdsFragments.AddNewAdsPage2Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="5sp"
+            android:text="صور العقار"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/add_estate_three_d_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/three_d_img"
+                    app:riv_corner_radius="15sp" />
+
+                <TextView
+                    android:id="@+id/three_d_image_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10sp"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    android:text="@string/street_view"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/more_images_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/upload_images_for_ads_item" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="5sp"
+            android:text="رابط التجول الافتراضي"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/link3d_et"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginStart="7sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:hint="الصق رابط التجول الافتراضي هنا ان وجد"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginEnd="15sp"
+            android:layout_marginBottom="5sp"
+            android:text="@string/real_estate_area"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/real_estate_aria_tv_et"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginStart="7sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="20sp"
+            android:background="@drawable/rounded_shape_with_green_border"
+            android:hint="@string/write_the_area_in_square_metres"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textAlignment="center"
+            android:textColor="@color/green_for_app"
+            android:textColorHint="@color/green_for_app"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/display_main_feature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:drawableEnd="@drawable/ic_downward"
+                android:gravity="center"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/main_specifications"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hide_main_feature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:drawableEnd="@drawable/ic_upward"
+                android:gravity="center"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/main_specifications"
+                android:textColor="@color/green_for_app"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_features_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10sp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="6"
+                tools:listitem="@layout/main_features_list_in_add_ads_item"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp">
+
+            <TextView
+                android:id="@+id/display_sub_feature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:drawableEnd="@drawable/ic_downward"
+                android:gravity="center"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/sub_specifications"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/hide_sub_feature_tv"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="10sp"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:drawableEnd="@drawable/ic_upward"
+                android:gravity="center"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:text="@string/sub_specifications"
+                android:textColor="@color/green_for_app"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/sub_features_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10sp"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:itemCount="6"
+            tools:listitem="@layout/sub_features_list_in_request_estate_item"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previous_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:layoutDirection="ltr"
+                android:text="السابق"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_shape_with_green_border"
+                android:text="التالي"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

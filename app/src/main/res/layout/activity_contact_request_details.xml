@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".ui.activities.ContactRequestDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green_for_app"
+        android:layoutDirection="ltr">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_image"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_rl"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentEnd="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/contact_iv"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/profile_image" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_name_rl"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toStartOf="@+id/contact_rl"
+            android:layout_toEndOf="@+id/back_rl">
+
+            <TextView
+                android:id="@+id/contact_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ads_info_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="4sp"
+                android:layout_marginEnd="10sp"
+                android:layout_marginBottom="4sp"
+                android:backgroundTint="@color/white"
+                android:visibility="gone"
+                app:cardCornerRadius="15sp"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/add_estate_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8sp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5sp"
+                        app:cardCornerRadius="15sp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/estate_iv"
+                            android:layout_width="129sp"
+                            android:layout_height="129sp"
+                            android:contentDescription="@string/app_name"
+                            android:foregroundGravity="center"
+                            android:scaleType="fitXY"
+                            android:src="@color/elementary1" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="7sp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/title_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/price_tv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="2sp"
+                                        android:text="-"
+                                        android:textColor="@color/green_for_app"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="2sp"
+                                        android:layout_marginEnd="2sp"
+                                        android:text="-"
+                                        android:textColor="@color/green_for_app"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="2sp"
+                                        android:text=" ريال "
+                                        android:textColor="@color/green_for_app"
+                                        android:textSize="10sp" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="2sp"
+                                android:background="@drawable/as_map_icon"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/city_name_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="2sp"
+                                android:layout_marginEnd="2sp"
+                                android:text="-"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="2sp"
+                                android:text="-"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="10sp" />
+
+
+                            <TextView
+                                android:id="@+id/area_name_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="2sp"
+                                android:layout_marginEnd="2sp"
+                                android:text="-"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/description_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginEnd="2sp"
+                            android:layout_marginBottom="5sp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="-"
+                            android:textSize="8sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/property_rv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:listitem="@layout/properties_item" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <include
+                android:id="@+id/request_details_id"
+                layout="@layout/fragment_requested_estate_details" />
+
+            <ProgressBar
+                android:id="@+id/main_progress_bar"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/result_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="150sp"
+                android:paddingBottom="100sp"
+                android:text="تفاصيل الطلب غير متوفرة"
+                android:textAlignment="center"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/action_buttons_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25sp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/accept_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_custom_nav_bar_green"
+                    android:paddingTop="10sp"
+                    android:paddingBottom="10sp"
+                    android:text="قبول"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginEnd="10sp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/deny_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_button_red"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="10sp"
+                        android:text="رفض"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/delete_contact_request_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_button_red"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="10sp"
+                        android:text="حذف طلب التواصل"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

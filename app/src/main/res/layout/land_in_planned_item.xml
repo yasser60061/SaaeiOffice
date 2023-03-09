@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:orientation="horizontal"
+    android:layoutDirection="rtl"
+    android:paddingStart="5sp"
+    android:paddingEnd="5sp"
+    android:background="@drawable/rectangle_shape"
+    app:cardCornerRadius="10sp">
+
+    <CheckBox
+        android:id="@+id/land_or_unit_number_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/red"
+        android:text="---" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="10sp"
+        android:text="  "/>
+
+    <TextView
+        android:id="@+id/land_or_unit_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingEnd="5sp"
+        android:textSize="8sp"
+        android:text="--"/>
+
+</LinearLayout>

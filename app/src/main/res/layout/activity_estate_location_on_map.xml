@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.estateLocationOnMapActivity.EstateLocationOnMapActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr">
+
+        <RelativeLayout
+            android:id="@+id/back_rl"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/back_image"
+                android:contentDescription="@string/app_name" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/header_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/estate_location_on_map"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="4sp"
+        android:layout_marginEnd="15sp"
+        android:layoutDirection="ltr"
+        android:background="@drawable/rounded_edit_text"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/comparison_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="20sp"
+            android:paddingTop="10sp"
+            android:paddingEnd="20sp"
+            android:paddingBottom="10sp">
+
+            <ImageView
+                android:id="@+id/comparison_iv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginEnd="7sp"
+                android:background="@drawable/comparing_ic"
+                android:contentDescription="@string/app_name"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/comparison_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comparison"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/the_service_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="20sp"
+            android:paddingTop="10sp"
+            android:paddingEnd="20sp"
+            android:paddingBottom="10sp">
+
+            <ImageView
+                android:id="@+id/the_service_iv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginEnd="7sp"
+                android:background="@drawable/service_elementary_ic"
+                android:contentDescription="@string/app_name"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/the_service_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/services"
+                android:textAlignment="center"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/the_location_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="20sp"
+            android:paddingTop="10sp"
+            android:paddingEnd="20sp"
+            android:paddingBottom="10sp">
+
+            <ImageView
+                android:id="@+id/the_location_iv"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="7sp"
+                android:layout_marginEnd="7sp"
+                android:background="@drawable/as_map_elementary"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/the_location_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="15sp"
+        android:background="@color/green_for_app" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/service_list_on_map_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/all_main_category_item" />
+
+        <LinearLayout
+            android:id="@+id/comparison_price_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/all_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@drawable/rounded_button_black"
+                android:paddingStart="20sp"
+                android:paddingTop="6sp"
+                android:paddingEnd="20sp"
+                android:paddingBottom="6sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="الكل"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/lower_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/rounded_button_elementary"
+                android:paddingStart="20sp"
+                android:paddingTop="6sp"
+                android:paddingEnd="20sp"
+                android:paddingBottom="6sp"
+                android:text="سعر أقل"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/higher_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@drawable/rounded_button_elementary"
+                android:paddingStart="20sp"
+                android:paddingTop="6sp"
+                android:paddingEnd="20sp"
+                android:paddingBottom="6sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="سعر أعلى"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+      <RelativeLayout
+          android:id="@+id/map_rl"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <fragment
+              android:id="@+id/estate_on_map_fragment"
+              android:name="com.google.android.gms.maps.SupportMapFragment"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" />
+
+          <ProgressBar
+              android:id="@+id/progress_bar"
+              android:layout_width="30sp"
+              android:layout_height="30sp"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:visibility="invisible" />
+
+      </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

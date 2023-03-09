@@ -1,0 +1,912 @@
+{
+  "success": true,
+  "advertisement": {
+    "unitNumber": 5563,
+    "description": "",
+    "title": "فيلا سكنية للبيع ",
+    "bestFeature": "فيلا بموقع متميز للبيع..\r\nلمن يبحث عن سكن قريب من المدارس الحكومية.\r\nفيلا دورين.. مفصولة.. عدادين كهرباء\r\nحي النسيم الغربي..\r\nمقابل مجمع مدارس بنات\r\nعمرها 40 سنة تقريباً\r\nمجدده من الداخل بشكل كامل من 12 سنة.\r\nالمساحة 312.5 متر\r\nالواجهة 14 متر\r\nشارع 12 متر\r\nمدخل سيارة\r\nحوش\r\nوسطح\r\nوملحق في الحوش عبارة عن مجلس ودورة مياه .\r\n\r\nللجادين التواصل على جوال أو واتس: 0504955588",
+    "address": "",
+    "description_en": "",
+    "description_ar": "",
+    "title_en": "فيلا سكنية للبيع ",
+    "title_ar": "فيلا سكنية للبيع ",
+    "bestFeature_en": "فيلا بموقع متميز للبيع..\r\nلمن يبحث عن سكن قريب من المدارس الحكومية.\r\nفيلا دورين.. مفصولة.. عدادين كهرباء\r\nحي النسيم الغربي..\r\nمقابل مجمع مدارس بنات\r\nعمرها 40 سنة تقريباً\r\nمجدده من الداخل بشكل كامل من 12 سنة.\r\nالمساحة 312.5 متر\r\nالواجهة 14 متر\r\nشارع 12 متر\r\nمدخل سيارة\r\nحوش\r\nوسطح\r\nوملحق في الحوش عبارة عن مجلس ودورة مياه .\r\n\r\nللجادين التواصل على جوال أو واتس: 0504955588",
+    "bestFeature_ar": "فيلا بموقع متميز للبيع..\r\nلمن يبحث عن سكن قريب من المدارس الحكومية.\r\nفيلا دورين.. مفصولة.. عدادين كهرباء\r\nحي النسيم الغربي..\r\nمقابل مجمع مدارس بنات\r\nعمرها 40 سنة تقريباً\r\nمجدده من الداخل بشكل كامل من 12 سنة.\r\nالمساحة 312.5 متر\r\nالواجهة 14 متر\r\nشارع 12 متر\r\nمدخل سيارة\r\nحوش\r\nوسطح\r\nوملحق في الحوش عبارة عن مجلس ودورة مياه .\r\n\r\nللجادين التواصل على جوال أو واتس: 0504955588",
+    "address_ar": "",
+    "address_en": "",
+    "viewsCount": 2,
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        46.82084928367539,
+        24.722779702189897
+      ]
+    },
+    "contractType": "SALE",
+    "priceType": "ON-SOOM",
+    "size": 313,
+    "imgs": [
+      "https://api.saaei.co/media/15860857101586085710_5e89bf4ea3642.jpg",
+      "https://api.saaei.co/media/15860857101586085710_5e89bf4eca9cb.jpg",
+      "https://api.saaei.co/media/15860857131586085713_5e89bf51c00ea.jpg",
+      "https://api.saaei.co/media/15860857161586085716_5e89bf54e4001.jpg",
+      "https://api.saaei.co/media/15860857181586085718_5e89bf560b3e1.jpg",
+      "https://api.saaei.co/media/15860857191586085719_5e89bf570632e.jpg",
+      "https://api.saaei.co/media/15860857211586085721_5e89bf592de65.jpg",
+      "https://api.saaei.co/media/15860857211586085721_5e89bf5971450.jpg",
+      "https://api.saaei.co/media/15860857221586085722_5e89bf5a5b9bf.jpg",
+      "https://api.saaei.co/media/15860857221586085722_5e89bf5a9bd21.jpg",
+      "https://api.saaei.co/media/15860857251586085725_5e89bf5d0f006.jpg",
+      "https://api.saaei.co/media/15860857261586085726_5e89bf5eeed17.jpg",
+      "https://api.saaei.co/media/15860857281586085728_5e89bf603c0e3.jpg",
+      "https://api.saaei.co/media/15860857291586085729_5e89bf619f427.jpg",
+      "https://api.saaei.co/media/15860857321586085732_5e89bf641d06c.jpg"
+    ],
+    "link3D": [],
+    "rate": 0,
+    "rateCount": 0,
+    "rateNumbers": 0,
+    "enableInstallment": false,
+    "enablePhoneContact": true,
+    "isFavourite": false,
+    "available": true,
+    "status": "NEW",
+    "adsFile": [],
+    "distance": 0,
+    "id": 5563,
+    "related": false,
+    "contraindications": false,
+    "undocumentedRights": false,
+    "influentialInformation": false,
+    "saudiBuildingCode": false,
+    "guarantees": false,
+    "advertiserClass": "OWNER",
+    "deposit": 0,
+    "hasDeposit": false,
+    "disputes": false,
+    "dateMilleSec": 1643890719000,
+    "contactsOffices": [],
+    "isConnected": false,
+    "refusedOffices": [],
+    "withdrawOffices": [],
+    "createdAt": "2022-02-03T12:18:39.071Z",
+    "updatedAt": "2022-10-17T09:28:52.371Z",
+    "category": {
+      "categoryName": "housing",
+      "type": "NORMAL",
+      "id": 1
+    },
+    "subCategory": {
+      "categoryName": "villa",
+      "type": "NORMAL",
+      "id": 7
+    },
+    "region": {
+      "regionName": "ٌRiyad Region",
+      "id": 1
+    },
+    "city": {
+      "cityName": "الرياض",
+      "id": 1
+    },
+    "area": {
+      "areaName": "النسيم الغربي",
+      "id": 229
+    },
+    "owner": {
+      "phone": "+966504955588",
+      "fullname": "أبو عبد الرحمن الحمود",
+      "img": "",
+      "type": "USER",
+      "online": false,
+      "id": 590,
+      "rate": 0,
+      "rateCount": 0,
+      "rateNumbers": 0,
+      "city": null,
+      "country": {
+        "countryName": "KSA",
+        "id": 1
+      }
+    },
+    "features": [
+      {
+        "name": "appendix",
+        "type": "BOOLEAN",
+        "id": 16,
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/7861e0e2-684b-4d80-b7ad-0484872cd2e5.png"
+      },
+      {
+        "name": "garage",
+        "type": "BOOLEAN",
+        "id": 8,
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/b267ae5d-cfb4-4662-bec7-fd58657f4f6a.png"
+      }
+    ],
+    "properties": [
+      {
+        "name": "rooms_number",
+        "type": "NUMBER",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/18a58b88-0d83-4ded-84a9-f9e6edcbe968.png",
+        "id": 4,
+        "value": 9
+      },
+      {
+        "name": "bathrooms_number",
+        "type": "NUMBER",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/42549ac4-7406-4483-a69b-755c9d89921a.png",
+        "id": 2,
+        "value": 5
+      },
+      {
+        "name": "master_rooms_number",
+        "type": "NUMBER",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/a23fb012-5e20-4550-8613-e5c8a8bd5df5.png",
+        "id": 5,
+        "value": 9
+      },
+      {
+        "name": "building_age",
+        "type": "NUMBER",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/ac088c10-aad9-49cf-a1e7-2936efa507dc.png",
+        "id": 6,
+        "value": 1401
+      },
+      {
+        "name": "halls_number",
+        "type": "NUMBER",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/e0871318-d78b-4eb0-9e82-efecfb9304f5.png",
+        "id": 15,
+        "value": 2
+      },
+      {
+        "name": "floors_number",
+        "type": "NUMBER",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/c5feb084-6fa2-4c92-b1c3-dc810784bd5b.png",
+        "id": 1,
+        "value": 2
+      },
+      {
+        "name": "all_land_size",
+        "type": "NUMBER",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/62eba5d0-1dc9-416e-8952-4e48a5962cc2.png",
+        "id": 18,
+        "value": 312.5
+      },
+      {
+        "name": "kitchens_number",
+        "type": "NUMBER",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/f9dcd126-a885-4a91-995d-b13d0a936f45.png",
+        "id": 19,
+        "value": 2
+      },
+      {
+        "name": "front_yard",
+        "type": "LIST",
+        "img": "https://saaei-api-v2.algorithms.ws/uploads/b8993ff9-9546-41f7-a5f2-957603502035.png",
+        "id": 32,
+        "value": 36,
+        "optionName": "شرقية"
+      }
+    ],
+    "priceAvg": "DOWN",
+    "theAverage": 0,
+    "statistics": [
+      {
+        "city": {
+          "cityName": "الرياض",
+          "id": 1
+        },
+        "count": 1
+      },
+      {
+        "city": {
+          "cityName": "مكه المكرمة",
+          "id": 2
+        },
+        "count": 1
+      },
+      {
+        "city": {
+          "cityName": "بريدة",
+          "id": 3
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "عنيزة",
+          "id": 4
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "البكيرية",
+          "id": 5
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الرس",
+          "id": 6
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "البدائع",
+          "id": 8
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "المجمعة",
+          "id": 9
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "جدة",
+          "id": 10
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "تبوك",
+          "id": 11
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الدمام",
+          "id": 12
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الاحساء",
+          "id": 13
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "القطيف",
+          "id": 14
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "خميس مشيط",
+          "id": 15
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الطائف",
+          "id": 16
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "نجران",
+          "id": 17
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "حفر الباطن",
+          "id": 18
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الجبيل",
+          "id": 19
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "ضباء",
+          "id": 20
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الخرج",
+          "id": 21
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الثقبة",
+          "id": 22
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "ينبع",
+          "id": 23
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الخبر",
+          "id": 24
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "عرعر",
+          "id": 25
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الحوية",
+          "id": 26
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "سكاكا",
+          "id": 27
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "جازان",
+          "id": 28
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "القريات",
+          "id": 29
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "Dhahran South",
+          "id": 30
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الباحة",
+          "id": 31
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الزلفي",
+          "id": 32
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "وادي الدواسر",
+          "id": 33
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "بيشة",
+          "id": 34
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "سيهات",
+          "id": 35
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "شرورة",
+          "id": 36
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "بحره",
+          "id": 37
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "تاورت",
+          "id": 38
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الدوادمي",
+          "id": 39
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "صبيا",
+          "id": 40
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "بيش",
+          "id": 41
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "بارق",
+          "id": 44
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "حوطة بني تميم",
+          "id": 45
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "حائل",
+          "id": 46
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الهفوف",
+          "id": 47
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "ابها",
+          "id": 48
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "احد رفيده",
+          "id": 49
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "قرية العليا",
+          "id": 50
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "النعيرية",
+          "id": 51
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الوجه",
+          "id": 52
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "بقيق",
+          "id": 53
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "خيبر",
+          "id": 54
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الغاط",
+          "id": 55
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "املج",
+          "id": 56
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "رابغ",
+          "id": 57
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "عفيف",
+          "id": 58
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "ثادق",
+          "id": 59
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "تاروت",
+          "id": 60
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "شقراء",
+          "id": 61
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الدرعية",
+          "id": 62
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "القويعية",
+          "id": 63
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "المزاحمية",
+          "id": 64
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "بدر",
+          "id": 65
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الدلم",
+          "id": 66
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الشنان",
+          "id": 67
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الخرمة",
+          "id": 68
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الجموم",
+          "id": 69
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "المجاردة",
+          "id": 70
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "السليل",
+          "id": 71
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "تثليث",
+          "id": 72
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "القنفذة",
+          "id": 73
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "محايل",
+          "id": 74
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "ثول",
+          "id": 75
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "تربه",
+          "id": 76
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "صفوى",
+          "id": 77
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "عنك",
+          "id": 78
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "طريف",
+          "id": 79
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "رفحاء",
+          "id": 80
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "دومة الجندل",
+          "id": 81
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "المذنب",
+          "id": 82
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الخفجي",
+          "id": 83
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "رياض الخبراء",
+          "id": 84
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "رأس تنورة",
+          "id": 85
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الشماسية",
+          "id": 86
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الحريق",
+          "id": 87
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "ليلى",
+          "id": 88
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "بللسمر",
+          "id": 89
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "ابو عريش",
+          "id": 90
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "صامطة",
+          "id": 91
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "احد المسارحة",
+          "id": 92
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "مدينة الملك عبدالله الاقتصادية",
+          "id": 93
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "الفويلق",
+          "id": 94
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "Tabarjal",
+          "id": 95
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "AlBida",
+          "id": 96
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "Taima",
+          "id": 97
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "haql",
+          "id": 98
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "baqea",
+          "id": 99
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "alghazala",
+          "id": 100
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "alhayit",
+          "id": 101
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "alshamliu",
+          "id": 102
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "alsulimi",
+          "id": 103
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "muaqiq",
+          "id": 104
+        },
+        "count": 0
+      },
+      {
+        "city": {
+          "cityName": "samira",
+          "id": 105
+        },
+        "count": 0
+      }
+    ],
+    "totalViews": 2
+  }
+}

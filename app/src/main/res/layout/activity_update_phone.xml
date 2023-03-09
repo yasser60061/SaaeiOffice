@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    tools:context=".ui.activities.UpdatePhoneActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header_Relative"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/green_for_app"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/back_linear"
+                android:layout_width="?actionBarSize"
+                android:layout_height="?actionBarSize"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="10sp"
+                >
+
+                <ImageView
+                    android:id="@+id/back_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_image"
+                    android:contentDescription="@string/app_name" />
+
+                <TextView
+                    android:id="@+id/skip_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/skip"
+                    android:textColor="@color/green_for_app"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="تحديث رقم الجوال"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="70sp"
+        android:layout_marginBottom="50sp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/splash_logo"
+        android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="30sp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:text="ستصلك رسالة تفعيل على رقم الجوال الجديد الان"
+            android:textColor="@color/green_for_app"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:text="@string/current_phone_number"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/current_phone_number_et"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="5X XXX XXXX"
+        android:inputType="phone"
+        android:textSize="13sp"
+        android:paddingStart="12sp"
+        android:paddingEnd="12sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:text="@string/new_phone_number"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/new_phone_number_et"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:background="@drawable/rounded_edit_text"
+        android:inputType="phone"
+        android:hint="5X XXX XXXX"
+        android:textSize="13sp"
+        android:paddingStart="15sp"
+        android:paddingEnd="12sp" />
+
+        <TextView
+            android:id="@+id/verification_code_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:text="كود التفعيل"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/verification_code_et"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"
+            android:background="@drawable/rounded_edit_text"
+            android:inputType="phone"
+            android:maxLength="8"
+            android:textSize="13sp"
+            android:paddingStart="15sp"
+            android:paddingEnd="12sp" />
+
+        <TextView
+            android:id="@+id/counter_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:text="--"
+            android:textColor="@color/green_for_app"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/splash_background_1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            >
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:paddingStart="80sp"
+                android:paddingEnd="80sp"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/exit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_button"
+                android:paddingStart="80sp"
+                android:paddingEnd="80sp"
+                android:text="عودة"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
